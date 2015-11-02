@@ -1,23 +1,14 @@
 package org.apache.cassandra.tools;
 
 import java.io.File;
-import java.net.InetAddress;
-import java.net.MalformedURLException;
-import java.net.UnknownHostException;
+import java.net.*;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.apache.cassandra.config.Config;
-import org.apache.cassandra.config.EncryptionOptions;
-import org.apache.cassandra.config.YamlConfigurationLoader;
+import org.apache.cassandra.config.*;
 import org.apache.cassandra.exceptions.ConfigurationException;
 import org.apache.cassandra.tools.BulkLoader.CmdLineOptions;
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.GnuParser;
-import org.apache.commons.cli.HelpFormatter;
-import org.apache.commons.cli.Options;
-import org.apache.commons.cli.ParseException;
+import org.apache.commons.cli.*;
 
 public class LoaderOptions
 {
